@@ -209,10 +209,10 @@ canvas {
 .hero-title {
   text-align: center;
   font-weight: 600;
-  font-size: 1.875rem;
-  color: #f0f0f0;
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36p */
+  color: rgba(243, 244, 246, 0.5);
   opacity: 0;
-  margin-bottom: 40px;
 }
 
 @media (max-width: 767px) {
