@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
-import path from 'path';
 
 const nextConfig = {
-  webpack: (config, { isServer }) => {
-    // Add a rule to handle video files
+  reactStrictMode: true,
+  webpack: config => {
     config.module.rules.push({
       test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)$/i,
       use: [
