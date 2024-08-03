@@ -1,3 +1,13 @@
+import Hero from '@/components/Hero';
+import Highlights from '@/components/Highlights';
+import Navbar from '@/components/Navbar';
+
 export default function Home() {
-  return <main>hello apple of my eye</main>;
+  return (
+    <main>
+      <Navbar />
+      <Hero />
+      <Highlights />
+    </main>
+  );
 }
