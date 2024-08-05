@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 
+import withVideos from 'next-videos';
+
 const nextConfig = {
   reactStrictMode: true,
   webpack: config => {
@@ -19,4 +21,6 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+// module.export = nextConfig;
+
+export default withVideos();
