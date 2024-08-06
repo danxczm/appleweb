@@ -16,8 +16,8 @@ const Navbar = () => {
           ))}
         </NavbarList>
         <NavbarIconList>
-          <Image src={searchImg} alt="search" width={18} height={18} />
-          <Image src={bagImg} alt="bag" width={18} height={18} />
+          <Image src={searchImg} alt="search" width={19} height={19} />
+          <Image src={bagImg} alt="bag" width={19} height={19} />
         </NavbarIconList>
       </NavbarNav>
     </NavbarHeader>
@@ -32,10 +32,10 @@ const NavbarHeader = styled.header`
   justify-content: space-between;
   align-items: center;
 
-  padding: 1.25rem 2.5rem;
+  padding: 1.25rem;
 
   @media (min-width: 640px) {
-    padding: 1.25rem;
+    padding: 1.25rem 2.5rem;
   }
 `;
 
@@ -55,11 +55,11 @@ const NavbarList = styled.div`
 `;
 
 const NavbarItem = styled.div`
-  padding: 0 2.5rem;
+  padding: 0 1.25rem;
   font-size: 0.875rem; /* 14px */
   line-height: 1.25rem; /* 20px */
   cursor: pointer;
-  color: rgb(156 163 175);
+  color: rgb(134 134 139);
 
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -76,7 +76,7 @@ const NavbarIconList = styled.div`
   gap: 1.75rem; /* 28px */
 
   @media not all and (min-width: 640px) {
-    justify-content: end;
+    justify-content: flex-end;
     flex: 1 1 0%;
   }
 `;
