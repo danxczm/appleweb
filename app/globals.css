@@ -108,7 +108,7 @@ canvas {
 }
 
 .section-heading {
-  color: gray;
+  color: rgba(134, 134, 139);
   font-size: 3rem;
   margin-bottom: 20px;
   font-weight: 500;
@@ -118,14 +118,16 @@ canvas {
 
 @media (min-width: 768px) {
   .section-heading {
-    font-size: 5rem;
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
 @media (min-width: 1024px) {
   .section-heading {
-    font-size: 6rem;
     margin-bottom: 0;
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 
