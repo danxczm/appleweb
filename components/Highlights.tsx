@@ -6,6 +6,7 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import Image from 'next/image';
 import { rightImg, watchImg } from '@/utils';
+import VideoCaurusel from './VideoCaurusel';
 
 const Highlights = () => {
   useGSAP(() => {
@@ -39,6 +40,8 @@ const Highlights = () => {
             </p>
           </Container>
         </HighlightsTitleContainer>
+
+        <VideoCaurusel />
       </div>
     </HighlightsSection>
   );
@@ -58,7 +61,12 @@ const HighlightsTitleContainer = styled.div`
   margin-bottom: 3rem;
   align-items: end;
   justify-content: space-between;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
 `;
+
 const Container = styled.div`
   display: flex;
   align-items: end;
