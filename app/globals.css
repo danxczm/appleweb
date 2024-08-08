@@ -109,9 +109,10 @@ canvas {
 
 .section-heading {
   color: rgba(134, 134, 139);
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   font-weight: 500;
+  margin-bottom: 20px;
   opacity: 0;
   transform: translateY(20px);
 }
