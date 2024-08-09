@@ -74,6 +74,18 @@ const VideoCaurusel = () => {
           </Caurusel>
         ))}
       </VideoCauruselContainer>
+      <ControllerContainer className="flex-center">
+        <ControllerWrapper className="flex-center">
+          {videoRef.current.map((_, index) => (
+            <Controller
+              key={index}
+              ref={el => {
+                if (el) videoDivRef.current[index] = el;
+              }}
+            ></Controller>
+          ))}
+        </ControllerWrapper>
+      </ControllerContainer>
     </>
   );
 };
@@ -109,9 +121,29 @@ const ListTextContainer = styled.div`
 `;
 
 const ListText = styled.p`
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+  font-weight: 500;
+
   @media (min-width: 768px) {
-    font-size: 1.25rem; /* 20px */
-    line-height: 1.75rem; /* 28px */
-    font-weight: 500;
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
   }
+`;
+
+const ControllerContainer = styled.div`
+  position: relative;
+  margin-top: 2.5rem; /* 40px */
+`;
+
+const ControllerWrapper = styled.div`
+  padding: 1.25rem 1.75rem;
+  background-color: #42424570;
+  backdrop-filter: blur(8px);
+  border-radius: 9999px;
+`;
+
+const Controller = styled.div`
+  margin-left: 0.5rem; /* 8px */
+  margin-right: 0.5rem; /* 8px */
 `;
